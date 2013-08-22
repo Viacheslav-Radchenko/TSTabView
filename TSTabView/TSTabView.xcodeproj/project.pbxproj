@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F614211F17C6C83B003455EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F614211E17C6C83B003455EB /* UIKit.framework */; };
+		F614212117C6C83B003455EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F614212017C6C83B003455EB /* Foundation.framework */; };
+		F614212317C6C83B003455EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F614212217C6C83B003455EB /* CoreGraphics.framework */; };
+		F614212917C6C83B003455EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F614212717C6C83B003455EB /* InfoPlist.strings */; };
+		F614212B17C6C83B003455EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F614212A17C6C83B003455EB /* main.m */; };
+		F614212F17C6C83B003455EB /* TSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F614212E17C6C83B003455EB /* TSAppDelegate.m */; };
+		F614213117C6C83B003455EB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F614213017C6C83B003455EB /* Default.png */; };
+		F614213317C6C83B003455EB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614213217C6C83B003455EB /* Default@2x.png */; };
+		F614213517C6C83B003455EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614213417C6C83B003455EB /* Default-568h@2x.png */; };
+		F61421AA17C6C8B6003455EB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F614213C17C6C8B6003455EB /* LICENSE */; };
+		F61421AB17C6C8B6003455EB /* TSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F614214117C6C8B6003455EB /* TSUtils.m */; };
+		F61421AC17C6C8B6003455EB /* TSNavigationStripModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F614214517C6C8B6003455EB /* TSNavigationStripModel.m */; };
+		F61421AD17C6C8B6003455EB /* TSNavigationStripView.m in Sources */ = {isa = PBXBuildFile; fileRef = F614214717C6C8B6003455EB /* TSNavigationStripView.m */; };
+		F61421AE17C6C8B6003455EB /* TSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F614214B17C6C8B6003455EB /* TSScrollView.m */; };
+		F61421B917C6C8B6003455EB /* TSTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = F614216717C6C8B6003455EB /* TSTabView.m */; };
+		F61421BA17C6C8B6003455EB /* TSTabViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F614216B17C6C8B6003455EB /* TSTabViewModel.m */; };
+		F61421BB17C6C8B6003455EB /* TSTabViewWithDropDownPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = F614216E17C6C8B6003455EB /* TSTabViewWithDropDownPanel.m */; };
+		F61421BC17C6C8B6003455EB /* TSTabViewWithDropDownPanelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F614217117C6C8B6003455EB /* TSTabViewWithDropDownPanelModel.m */; };
+		F61421BD17C6C8B6003455EB /* NavigationStripHeaderBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F614217517C6C8B6003455EB /* NavigationStripHeaderBackground.png */; };
+		F61421BE17C6C8B6003455EB /* NavigationStripHeaderBackground_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F614217617C6C8B6003455EB /* NavigationStripHeaderBackground_1.png */; };
+		F61421BF17C6C8B6003455EB /* NavigationStripHeaderBackground_2.png in Resources */ = {isa = PBXBuildFile; fileRef = F614217717C6C8B6003455EB /* NavigationStripHeaderBackground_2.png */; };
+		F61421C017C6C8B6003455EB /* NavigationStripIcon-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F614217817C6C8B6003455EB /* NavigationStripIcon-Selected.png */; };
+		F61421C117C6C8B6003455EB /* NavigationStripIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F614217917C6C8B6003455EB /* NavigationStripIcon.png */; };
+		F61421C217C6C8B6003455EB /* NavigationStripItem-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F614217A17C6C8B6003455EB /* NavigationStripItem-Selected.png */; };
+		F61421C317C6C8B6003455EB /* NavigationStripItem.png in Resources */ = {isa = PBXBuildFile; fileRef = F614217B17C6C8B6003455EB /* NavigationStripItem.png */; };
+		F61421C417C6C8B6003455EB /* NavigationStripItemBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = F614217C17C6C8B6003455EB /* NavigationStripItemBlue.png */; };
+		F61421C517C6C8B6003455EB /* NavigationStripItemGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = F614217D17C6C8B6003455EB /* NavigationStripItemGrey.png */; };
+		F61421C617C6C8B6003455EB /* NavigationStripItemRed.png in Resources */ = {isa = PBXBuildFile; fileRef = F614217E17C6C8B6003455EB /* NavigationStripItemRed.png */; };
+		F61421C717C6C8B6003455EB /* NavigationStripLeftSideButton-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F614217F17C6C8B6003455EB /* NavigationStripLeftSideButton-Selected.png */; };
+		F61421C817C6C8B6003455EB /* NavigationStripLeftSideButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218017C6C8B6003455EB /* NavigationStripLeftSideButton.png */; };
+		F61421C917C6C8B6003455EB /* NavigationStripLeftSideButtonBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218117C6C8B6003455EB /* NavigationStripLeftSideButtonBlue.png */; };
+		F61421CA17C6C8B6003455EB /* NavigationStripLeftSideButtonGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218217C6C8B6003455EB /* NavigationStripLeftSideButtonGrey.png */; };
+		F61421CB17C6C8B6003455EB /* NavigationStripLeftSideButtonRed.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218317C6C8B6003455EB /* NavigationStripLeftSideButtonRed.png */; };
+		F61421CC17C6C8B6003455EB /* NavigationStripRightSideButton-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218417C6C8B6003455EB /* NavigationStripRightSideButton-Selected.png */; };
+		F61421CD17C6C8B6003455EB /* NavigationStripRightSideButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218517C6C8B6003455EB /* NavigationStripRightSideButton.png */; };
+		F61421CE17C6C8B6003455EB /* NavigationStripRightSideButtonBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218617C6C8B6003455EB /* NavigationStripRightSideButtonBlue.png */; };
+		F61421CF17C6C8B6003455EB /* NavigationStripRightSideButtonGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218717C6C8B6003455EB /* NavigationStripRightSideButtonGrey.png */; };
+		F61421D017C6C8B6003455EB /* NavigationStripRightSideButtonRed.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218817C6C8B6003455EB /* NavigationStripRightSideButtonRed.png */; };
+		F61421D117C6C8B6003455EB /* NavigationStripSectionBackground-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218917C6C8B6003455EB /* NavigationStripSectionBackground-Selected.png */; };
+		F61421D217C6C8B6003455EB /* NavigationStripSectionBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218A17C6C8B6003455EB /* NavigationStripSectionBackground.png */; };
+		F61421D317C6C8B6003455EB /* NavigationStripSectionBackground_2-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218B17C6C8B6003455EB /* NavigationStripSectionBackground_2-Selected.png */; };
+		F61421D417C6C8B6003455EB /* NavigationStripSectionBackground_2.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218C17C6C8B6003455EB /* NavigationStripSectionBackground_2.png */; };
+		F61421D517C6C8B6003455EB /* NavigationStripSectionBackgroundRed-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218D17C6C8B6003455EB /* NavigationStripSectionBackgroundRed-Selected.png */; };
+		F61421D617C6C8B6003455EB /* NavigationStripSectionBackgroundRed.png in Resources */ = {isa = PBXBuildFile; fileRef = F614218E17C6C8B6003455EB /* NavigationStripSectionBackgroundRed.png */; };
+		F61421D717C6C8B6003455EB /* NavigationStripHeaderBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219017C6C8B6003455EB /* NavigationStripHeaderBackground@2x.png */; };
+		F61421D817C6C8B6003455EB /* NavigationStripHeaderBackground_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219117C6C8B6003455EB /* NavigationStripHeaderBackground_1@2x.png */; };
+		F61421D917C6C8B6003455EB /* NavigationStripHeaderBackground_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219217C6C8B6003455EB /* NavigationStripHeaderBackground_2@2x.png */; };
+		F61421DA17C6C8B6003455EB /* NavigationStripIcon-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219317C6C8B6003455EB /* NavigationStripIcon-Selected@2x.png */; };
+		F61421DB17C6C8B6003455EB /* NavigationStripIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219417C6C8B6003455EB /* NavigationStripIcon@2x.png */; };
+		F61421DC17C6C8B6003455EB /* NavigationStripItem-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219517C6C8B6003455EB /* NavigationStripItem-Selected@2x.png */; };
+		F61421DD17C6C8B6003455EB /* NavigationStripItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219617C6C8B6003455EB /* NavigationStripItem@2x.png */; };
+		F61421DE17C6C8B6003455EB /* NavigationStripItemBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219717C6C8B6003455EB /* NavigationStripItemBlue@2x.png */; };
+		F61421DF17C6C8B6003455EB /* NavigationStripItemGrey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219817C6C8B6003455EB /* NavigationStripItemGrey@2x.png */; };
+		F61421E017C6C8B6003455EB /* NavigationStripItemRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219917C6C8B6003455EB /* NavigationStripItemRed@2x.png */; };
+		F61421E117C6C8B6003455EB /* NavigationStripLeftSideButton-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219A17C6C8B6003455EB /* NavigationStripLeftSideButton-Selected@2x.png */; };
+		F61421E217C6C8B6003455EB /* NavigationStripLeftSideButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219B17C6C8B6003455EB /* NavigationStripLeftSideButton@2x.png */; };
+		F61421E317C6C8B6003455EB /* NavigationStripLeftSideButtonBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219C17C6C8B6003455EB /* NavigationStripLeftSideButtonBlue@2x.png */; };
+		F61421E417C6C8B6003455EB /* NavigationStripLeftSideButtonGrey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219D17C6C8B6003455EB /* NavigationStripLeftSideButtonGrey@2x.png */; };
+		F61421E517C6C8B6003455EB /* NavigationStripLeftSideButtonRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219E17C6C8B6003455EB /* NavigationStripLeftSideButtonRed@2x.png */; };
+		F61421E617C6C8B6003455EB /* NavigationStripRightSideButton-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F614219F17C6C8B6003455EB /* NavigationStripRightSideButton-Selected@2x.png */; };
+		F61421E717C6C8B6003455EB /* NavigationStripRightSideButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61421A017C6C8B6003455EB /* NavigationStripRightSideButton@2x.png */; };
+		F61421E817C6C8B6003455EB /* NavigationStripRightSideButtonBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61421A117C6C8B6003455EB /* NavigationStripRightSideButtonBlue@2x.png */; };
+		F61421E917C6C8B6003455EB /* NavigationStripRightSideButtonGrey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61421A217C6C8B6003455EB /* NavigationStripRightSideButtonGrey@2x.png */; };
+		F61421EA17C6C8B6003455EB /* NavigationStripRightSideButtonRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61421A317C6C8B6003455EB /* NavigationStripRightSideButtonRed@2x.png */; };
+		F61421EB17C6C8B6003455EB /* NavigationStripSectionBackground-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61421A417C6C8B6003455EB /* NavigationStripSectionBackground-Selected@2x.png */; };
+		F61421EC17C6C8B6003455EB /* NavigationStripSectionBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61421A517C6C8B6003455EB /* NavigationStripSectionBackground@2x.png */; };
+		F61421ED17C6C8B6003455EB /* NavigationStripSectionBackground_2-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61421A617C6C8B6003455EB /* NavigationStripSectionBackground_2-Selected@2x.png */; };
+		F61421EE17C6C8B6003455EB /* NavigationStripSectionBackground_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61421A717C6C8B6003455EB /* NavigationStripSectionBackground_2@2x.png */; };
+		F61421EF17C6C8B6003455EB /* NavigationStripSectionBackgroundRed-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61421A817C6C8B6003455EB /* NavigationStripSectionBackgroundRed-Selected@2x.png */; };
+		F61421F017C6C8B6003455EB /* NavigationStripSectionBackgroundRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61421A917C6C8B6003455EB /* NavigationStripSectionBackgroundRed@2x.png */; };
+		F61421FA17C6C8CE003455EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F61421F217C6C8CE003455EB /* InfoPlist.strings */; };
+		F61421FB17C6C8CE003455EB /* TSTabViewTestViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61421F417C6C8CE003455EB /* TSTabViewTestViewController~ipad.xib */; };
+		F61421FC17C6C8CE003455EB /* TSTabViewTestViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61421F617C6C8CE003455EB /* TSTabViewTestViewController~iphone.xib */; };
+		F61421FD17C6C8CE003455EB /* TSTabViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61421F917C6C8CE003455EB /* TSTabViewTestViewController.m */; };
+		F61421FF17C6C8DE003455EB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61421FE17C6C8DE003455EB /* QuartzCore.framework */; };
+		F614220217C6C927003455EB /* TSTestSectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F614220117C6C927003455EB /* TSTestSectionButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F614211B17C6C83B003455EB /* TSTabView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSTabView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F614211E17C6C83B003455EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F614212017C6C83B003455EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F614212217C6C83B003455EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F614212617C6C83B003455EB /* TSTabView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TSTabView-Info.plist"; sourceTree = "<group>"; };
+		F614212817C6C83B003455EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F614212A17C6C83B003455EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F614212C17C6C83B003455EB /* TSTabView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSTabView-Prefix.pch"; sourceTree = "<group>"; };
+		F614212D17C6C83B003455EB /* TSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
+		F614212E17C6C83B003455EB /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
+		F614213017C6C83B003455EB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F614213217C6C83B003455EB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F614213417C6C83B003455EB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F614213C17C6C8B6003455EB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F614213F17C6C8B6003455EB /* TSDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDefines.h; sourceTree = "<group>"; };
+		F614214017C6C8B6003455EB /* TSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUtils.h; sourceTree = "<group>"; };
+		F614214117C6C8B6003455EB /* TSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUtils.m; sourceTree = "<group>"; };
+		F614214317C6C8B6003455EB /* TSNavigationStripDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNavigationStripDataSource.h; sourceTree = "<group>"; };
+		F614214417C6C8B6003455EB /* TSNavigationStripModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNavigationStripModel.h; sourceTree = "<group>"; };
+		F614214517C6C8B6003455EB /* TSNavigationStripModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNavigationStripModel.m; sourceTree = "<group>"; };
+		F614214617C6C8B6003455EB /* TSNavigationStripView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNavigationStripView.h; sourceTree = "<group>"; };
+		F614214717C6C8B6003455EB /* TSNavigationStripView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNavigationStripView.m; sourceTree = "<group>"; };
+		F614214817C6C8B6003455EB /* TSNavigationStripViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNavigationStripViewDelegate.h; sourceTree = "<group>"; };
+		F614214A17C6C8B6003455EB /* TSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSScrollView.h; sourceTree = "<group>"; };
+		F614214B17C6C8B6003455EB /* TSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSScrollView.m; sourceTree = "<group>"; };
+		F614216617C6C8B6003455EB /* TSTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTabView.h; sourceTree = "<group>"; };
+		F614216717C6C8B6003455EB /* TSTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTabView.m; sourceTree = "<group>"; };
+		F614216817C6C8B6003455EB /* TSTabViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTabViewDataSource.h; sourceTree = "<group>"; };
+		F614216917C6C8B6003455EB /* TSTabViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTabViewDelegate.h; sourceTree = "<group>"; };
+		F614216A17C6C8B6003455EB /* TSTabViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTabViewModel.h; sourceTree = "<group>"; };
+		F614216B17C6C8B6003455EB /* TSTabViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTabViewModel.m; sourceTree = "<group>"; };
+		F614216D17C6C8B6003455EB /* TSTabViewWithDropDownPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTabViewWithDropDownPanel.h; sourceTree = "<group>"; };
+		F614216E17C6C8B6003455EB /* TSTabViewWithDropDownPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTabViewWithDropDownPanel.m; sourceTree = "<group>"; };
+		F614216F17C6C8B6003455EB /* TSTabViewWithDropDownPanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTabViewWithDropDownPanelDelegate.h; sourceTree = "<group>"; };
+		F614217017C6C8B6003455EB /* TSTabViewWithDropDownPanelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTabViewWithDropDownPanelModel.h; sourceTree = "<group>"; };
+		F614217117C6C8B6003455EB /* TSTabViewWithDropDownPanelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTabViewWithDropDownPanelModel.m; sourceTree = "<group>"; };
+		F614217517C6C8B6003455EB /* NavigationStripHeaderBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripHeaderBackground.png; sourceTree = "<group>"; };
+		F614217617C6C8B6003455EB /* NavigationStripHeaderBackground_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripHeaderBackground_1.png; sourceTree = "<group>"; };
+		F614217717C6C8B6003455EB /* NavigationStripHeaderBackground_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripHeaderBackground_2.png; sourceTree = "<group>"; };
+		F614217817C6C8B6003455EB /* NavigationStripIcon-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripIcon-Selected.png"; sourceTree = "<group>"; };
+		F614217917C6C8B6003455EB /* NavigationStripIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripIcon.png; sourceTree = "<group>"; };
+		F614217A17C6C8B6003455EB /* NavigationStripItem-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripItem-Selected.png"; sourceTree = "<group>"; };
+		F614217B17C6C8B6003455EB /* NavigationStripItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripItem.png; sourceTree = "<group>"; };
+		F614217C17C6C8B6003455EB /* NavigationStripItemBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripItemBlue.png; sourceTree = "<group>"; };
+		F614217D17C6C8B6003455EB /* NavigationStripItemGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripItemGrey.png; sourceTree = "<group>"; };
+		F614217E17C6C8B6003455EB /* NavigationStripItemRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripItemRed.png; sourceTree = "<group>"; };
+		F614217F17C6C8B6003455EB /* NavigationStripLeftSideButton-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripLeftSideButton-Selected.png"; sourceTree = "<group>"; };
+		F614218017C6C8B6003455EB /* NavigationStripLeftSideButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripLeftSideButton.png; sourceTree = "<group>"; };
+		F614218117C6C8B6003455EB /* NavigationStripLeftSideButtonBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripLeftSideButtonBlue.png; sourceTree = "<group>"; };
+		F614218217C6C8B6003455EB /* NavigationStripLeftSideButtonGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripLeftSideButtonGrey.png; sourceTree = "<group>"; };
+		F614218317C6C8B6003455EB /* NavigationStripLeftSideButtonRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripLeftSideButtonRed.png; sourceTree = "<group>"; };
+		F614218417C6C8B6003455EB /* NavigationStripRightSideButton-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripRightSideButton-Selected.png"; sourceTree = "<group>"; };
+		F614218517C6C8B6003455EB /* NavigationStripRightSideButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripRightSideButton.png; sourceTree = "<group>"; };
+		F614218617C6C8B6003455EB /* NavigationStripRightSideButtonBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripRightSideButtonBlue.png; sourceTree = "<group>"; };
+		F614218717C6C8B6003455EB /* NavigationStripRightSideButtonGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripRightSideButtonGrey.png; sourceTree = "<group>"; };
+		F614218817C6C8B6003455EB /* NavigationStripRightSideButtonRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripRightSideButtonRed.png; sourceTree = "<group>"; };
+		F614218917C6C8B6003455EB /* NavigationStripSectionBackground-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripSectionBackground-Selected.png"; sourceTree = "<group>"; };
+		F614218A17C6C8B6003455EB /* NavigationStripSectionBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripSectionBackground.png; sourceTree = "<group>"; };
+		F614218B17C6C8B6003455EB /* NavigationStripSectionBackground_2-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripSectionBackground_2-Selected.png"; sourceTree = "<group>"; };
+		F614218C17C6C8B6003455EB /* NavigationStripSectionBackground_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripSectionBackground_2.png; sourceTree = "<group>"; };
+		F614218D17C6C8B6003455EB /* NavigationStripSectionBackgroundRed-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripSectionBackgroundRed-Selected.png"; sourceTree = "<group>"; };
+		F614218E17C6C8B6003455EB /* NavigationStripSectionBackgroundRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationStripSectionBackgroundRed.png; sourceTree = "<group>"; };
+		F614219017C6C8B6003455EB /* NavigationStripHeaderBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripHeaderBackground@2x.png"; sourceTree = "<group>"; };
+		F614219117C6C8B6003455EB /* NavigationStripHeaderBackground_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripHeaderBackground_1@2x.png"; sourceTree = "<group>"; };
+		F614219217C6C8B6003455EB /* NavigationStripHeaderBackground_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripHeaderBackground_2@2x.png"; sourceTree = "<group>"; };
+		F614219317C6C8B6003455EB /* NavigationStripIcon-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripIcon-Selected@2x.png"; sourceTree = "<group>"; };
+		F614219417C6C8B6003455EB /* NavigationStripIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripIcon@2x.png"; sourceTree = "<group>"; };
+		F614219517C6C8B6003455EB /* NavigationStripItem-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripItem-Selected@2x.png"; sourceTree = "<group>"; };
+		F614219617C6C8B6003455EB /* NavigationStripItem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripItem@2x.png"; sourceTree = "<group>"; };
+		F614219717C6C8B6003455EB /* NavigationStripItemBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripItemBlue@2x.png"; sourceTree = "<group>"; };
+		F614219817C6C8B6003455EB /* NavigationStripItemGrey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripItemGrey@2x.png"; sourceTree = "<group>"; };
+		F614219917C6C8B6003455EB /* NavigationStripItemRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripItemRed@2x.png"; sourceTree = "<group>"; };
+		F614219A17C6C8B6003455EB /* NavigationStripLeftSideButton-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripLeftSideButton-Selected@2x.png"; sourceTree = "<group>"; };
+		F614219B17C6C8B6003455EB /* NavigationStripLeftSideButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripLeftSideButton@2x.png"; sourceTree = "<group>"; };
+		F614219C17C6C8B6003455EB /* NavigationStripLeftSideButtonBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripLeftSideButtonBlue@2x.png"; sourceTree = "<group>"; };
+		F614219D17C6C8B6003455EB /* NavigationStripLeftSideButtonGrey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripLeftSideButtonGrey@2x.png"; sourceTree = "<group>"; };
+		F614219E17C6C8B6003455EB /* NavigationStripLeftSideButtonRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripLeftSideButtonRed@2x.png"; sourceTree = "<group>"; };
+		F614219F17C6C8B6003455EB /* NavigationStripRightSideButton-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripRightSideButton-Selected@2x.png"; sourceTree = "<group>"; };
+		F61421A017C6C8B6003455EB /* NavigationStripRightSideButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripRightSideButton@2x.png"; sourceTree = "<group>"; };
+		F61421A117C6C8B6003455EB /* NavigationStripRightSideButtonBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripRightSideButtonBlue@2x.png"; sourceTree = "<group>"; };
+		F61421A217C6C8B6003455EB /* NavigationStripRightSideButtonGrey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripRightSideButtonGrey@2x.png"; sourceTree = "<group>"; };
+		F61421A317C6C8B6003455EB /* NavigationStripRightSideButtonRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripRightSideButtonRed@2x.png"; sourceTree = "<group>"; };
+		F61421A417C6C8B6003455EB /* NavigationStripSectionBackground-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripSectionBackground-Selected@2x.png"; sourceTree = "<group>"; };
+		F61421A517C6C8B6003455EB /* NavigationStripSectionBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripSectionBackground@2x.png"; sourceTree = "<group>"; };
+		F61421A617C6C8B6003455EB /* NavigationStripSectionBackground_2-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripSectionBackground_2-Selected@2x.png"; sourceTree = "<group>"; };
+		F61421A717C6C8B6003455EB /* NavigationStripSectionBackground_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripSectionBackground_2@2x.png"; sourceTree = "<group>"; };
+		F61421A817C6C8B6003455EB /* NavigationStripSectionBackgroundRed-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripSectionBackgroundRed-Selected@2x.png"; sourceTree = "<group>"; };
+		F61421A917C6C8B6003455EB /* NavigationStripSectionBackgroundRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationStripSectionBackgroundRed@2x.png"; sourceTree = "<group>"; };
+		F61421F317C6C8CE003455EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		F61421F517C6C8CE003455EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "TSTabViewTestViewController~ipad.xib"; sourceTree = "<group>"; };
+		F61421F717C6C8CE003455EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "TSTabViewTestViewController~iphone.xib"; sourceTree = "<group>"; };
+		F61421F817C6C8CE003455EB /* TSTabViewTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTabViewTestViewController.h; sourceTree = "<group>"; };
+		F61421F917C6C8CE003455EB /* TSTabViewTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTabViewTestViewController.m; sourceTree = "<group>"; };
+		F61421FE17C6C8DE003455EB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F614220017C6C927003455EB /* TSTestSectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTestSectionButton.h; sourceTree = "<group>"; };
+		F614220117C6C927003455EB /* TSTestSectionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTestSectionButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F614211817C6C83B003455EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F61421FF17C6C8DE003455EB /* QuartzCore.framework in Frameworks */,
+				F614211F17C6C83B003455EB /* UIKit.framework in Frameworks */,
+				F614212117C6C83B003455EB /* Foundation.framework in Frameworks */,
+				F614212317C6C83B003455EB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F614211217C6C83B003455EB = {
+			isa = PBXGroup;
+			children = (
+				F614213B17C6C8B6003455EB /* Classes */,
+				F614217217C6C8B6003455EB /* SharedResources */,
+				F614212417C6C83B003455EB /* TSTabView */,
+				F614211D17C6C83B003455EB /* Frameworks */,
+				F614211C17C6C83B003455EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F614211C17C6C83B003455EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F614211B17C6C83B003455EB /* TSTabView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F614211D17C6C83B003455EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F61421FE17C6C8DE003455EB /* QuartzCore.framework */,
+				F614211E17C6C83B003455EB /* UIKit.framework */,
+				F614212017C6C83B003455EB /* Foundation.framework */,
+				F614212217C6C83B003455EB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F614212417C6C83B003455EB /* TSTabView */ = {
+			isa = PBXGroup;
+			children = (
+				F614220017C6C927003455EB /* TSTestSectionButton.h */,
+				F614220117C6C927003455EB /* TSTestSectionButton.m */,
+				F61421F117C6C8CE003455EB /* en.lproj */,
+				F61421F817C6C8CE003455EB /* TSTabViewTestViewController.h */,
+				F61421F917C6C8CE003455EB /* TSTabViewTestViewController.m */,
+				F614212D17C6C83B003455EB /* TSAppDelegate.h */,
+				F614212E17C6C83B003455EB /* TSAppDelegate.m */,
+				F614212517C6C83B003455EB /* Supporting Files */,
+			);
+			path = TSTabView;
+			sourceTree = "<group>";
+		};
+		F614212517C6C83B003455EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F614212617C6C83B003455EB /* TSTabView-Info.plist */,
+				F614212717C6C83B003455EB /* InfoPlist.strings */,
+				F614212A17C6C83B003455EB /* main.m */,
+				F614212C17C6C83B003455EB /* TSTabView-Prefix.pch */,
+				F614213017C6C83B003455EB /* Default.png */,
+				F614213217C6C83B003455EB /* Default@2x.png */,
+				F614213417C6C83B003455EB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F614213B17C6C8B6003455EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F614213C17C6C8B6003455EB /* LICENSE */,
+				F614213D17C6C8B6003455EB /* TSUIKit */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		F614213D17C6C8B6003455EB /* TSUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F614213E17C6C8B6003455EB /* TSMisc */,
+				F614214217C6C8B6003455EB /* TSNavigationStripView */,
+				F614214917C6C8B6003455EB /* TSScrollView */,
+				F614216517C6C8B6003455EB /* TSTabView */,
+				F614216C17C6C8B6003455EB /* TSTabViewWithDropDownPanel */,
+			);
+			path = TSUIKit;
+			sourceTree = "<group>";
+		};
+		F614213E17C6C8B6003455EB /* TSMisc */ = {
+			isa = PBXGroup;
+			children = (
+				F614213F17C6C8B6003455EB /* TSDefines.h */,
+				F614214017C6C8B6003455EB /* TSUtils.h */,
+				F614214117C6C8B6003455EB /* TSUtils.m */,
+			);
+			path = TSMisc;
+			sourceTree = "<group>";
+		};
+		F614214217C6C8B6003455EB /* TSNavigationStripView */ = {
+			isa = PBXGroup;
+			children = (
+				F614214317C6C8B6003455EB /* TSNavigationStripDataSource.h */,
+				F614214417C6C8B6003455EB /* TSNavigationStripModel.h */,
+				F614214517C6C8B6003455EB /* TSNavigationStripModel.m */,
+				F614214617C6C8B6003455EB /* TSNavigationStripView.h */,
+				F614214717C6C8B6003455EB /* TSNavigationStripView.m */,
+				F614214817C6C8B6003455EB /* TSNavigationStripViewDelegate.h */,
+			);
+			path = TSNavigationStripView;
+			sourceTree = "<group>";
+		};
+		F614214917C6C8B6003455EB /* TSScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F614214A17C6C8B6003455EB /* TSScrollView.h */,
+				F614214B17C6C8B6003455EB /* TSScrollView.m */,
+			);
+			path = TSScrollView;
+			sourceTree = "<group>";
+		};
+		F614216517C6C8B6003455EB /* TSTabView */ = {
+			isa = PBXGroup;
+			children = (
+				F614216617C6C8B6003455EB /* TSTabView.h */,
+				F614216717C6C8B6003455EB /* TSTabView.m */,
+				F614216817C6C8B6003455EB /* TSTabViewDataSource.h */,
+				F614216917C6C8B6003455EB /* TSTabViewDelegate.h */,
+				F614216A17C6C8B6003455EB /* TSTabViewModel.h */,
+				F614216B17C6C8B6003455EB /* TSTabViewModel.m */,
+			);
+			path = TSTabView;
+			sourceTree = "<group>";
+		};
+		F614216C17C6C8B6003455EB /* TSTabViewWithDropDownPanel */ = {
+			isa = PBXGroup;
+			children = (
+				F614216D17C6C8B6003455EB /* TSTabViewWithDropDownPanel.h */,
+				F614216E17C6C8B6003455EB /* TSTabViewWithDropDownPanel.m */,
+				F614216F17C6C8B6003455EB /* TSTabViewWithDropDownPanelDelegate.h */,
+				F614217017C6C8B6003455EB /* TSTabViewWithDropDownPanelModel.h */,
+				F614217117C6C8B6003455EB /* TSTabViewWithDropDownPanelModel.m */,
+			);
+			path = TSTabViewWithDropDownPanel;
+			sourceTree = "<group>";
+		};
+		F614217217C6C8B6003455EB /* SharedResources */ = {
+			isa = PBXGroup;
+			children = (
+				F614217317C6C8B6003455EB /* Textures */,
+			);
+			name = SharedResources;
+			path = ../SharedResources;
+			sourceTree = "<group>";
+		};
+		F614217317C6C8B6003455EB /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				F614217417C6C8B6003455EB /* 1x */,
+				F614218F17C6C8B6003455EB /* 2x */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		F614217417C6C8B6003455EB /* 1x */ = {
+			isa = PBXGroup;
+			children = (
+				F614217517C6C8B6003455EB /* NavigationStripHeaderBackground.png */,
+				F614217617C6C8B6003455EB /* NavigationStripHeaderBackground_1.png */,
+				F614217717C6C8B6003455EB /* NavigationStripHeaderBackground_2.png */,
+				F614217817C6C8B6003455EB /* NavigationStripIcon-Selected.png */,
+				F614217917C6C8B6003455EB /* NavigationStripIcon.png */,
+				F614217A17C6C8B6003455EB /* NavigationStripItem-Selected.png */,
+				F614217B17C6C8B6003455EB /* NavigationStripItem.png */,
+				F614217C17C6C8B6003455EB /* NavigationStripItemBlue.png */,
+				F614217D17C6C8B6003455EB /* NavigationStripItemGrey.png */,
+				F614217E17C6C8B6003455EB /* NavigationStripItemRed.png */,
+				F614217F17C6C8B6003455EB /* NavigationStripLeftSideButton-Selected.png */,
+				F614218017C6C8B6003455EB /* NavigationStripLeftSideButton.png */,
+				F614218117C6C8B6003455EB /* NavigationStripLeftSideButtonBlue.png */,
+				F614218217C6C8B6003455EB /* NavigationStripLeftSideButtonGrey.png */,
+				F614218317C6C8B6003455EB /* NavigationStripLeftSideButtonRed.png */,
+				F614218417C6C8B6003455EB /* NavigationStripRightSideButton-Selected.png */,
+				F614218517C6C8B6003455EB /* NavigationStripRightSideButton.png */,
+				F614218617C6C8B6003455EB /* NavigationStripRightSideButtonBlue.png */,
+				F614218717C6C8B6003455EB /* NavigationStripRightSideButtonGrey.png */,
+				F614218817C6C8B6003455EB /* NavigationStripRightSideButtonRed.png */,
+				F614218917C6C8B6003455EB /* NavigationStripSectionBackground-Selected.png */,
+				F614218A17C6C8B6003455EB /* NavigationStripSectionBackground.png */,
+				F614218B17C6C8B6003455EB /* NavigationStripSectionBackground_2-Selected.png */,
+				F614218C17C6C8B6003455EB /* NavigationStripSectionBackground_2.png */,
+				F614218D17C6C8B6003455EB /* NavigationStripSectionBackgroundRed-Selected.png */,
+				F614218E17C6C8B6003455EB /* NavigationStripSectionBackgroundRed.png */,
+			);
+			path = 1x;
+			sourceTree = "<group>";
+		};
+		F614218F17C6C8B6003455EB /* 2x */ = {
+			isa = PBXGroup;
+			children = (
+				F614219017C6C8B6003455EB /* NavigationStripHeaderBackground@2x.png */,
+				F614219117C6C8B6003455EB /* NavigationStripHeaderBackground_1@2x.png */,
+				F614219217C6C8B6003455EB /* NavigationStripHeaderBackground_2@2x.png */,
+				F614219317C6C8B6003455EB /* NavigationStripIcon-Selected@2x.png */,
+				F614219417C6C8B6003455EB /* NavigationStripIcon@2x.png */,
+				F614219517C6C8B6003455EB /* NavigationStripItem-Selected@2x.png */,
+				F614219617C6C8B6003455EB /* NavigationStripItem@2x.png */,
+				F614219717C6C8B6003455EB /* NavigationStripItemBlue@2x.png */,
+				F614219817C6C8B6003455EB /* NavigationStripItemGrey@2x.png */,
+				F614219917C6C8B6003455EB /* NavigationStripItemRed@2x.png */,
+				F614219A17C6C8B6003455EB /* NavigationStripLeftSideButton-Selected@2x.png */,
+				F614219B17C6C8B6003455EB /* NavigationStripLeftSideButton@2x.png */,
+				F614219C17C6C8B6003455EB /* NavigationStripLeftSideButtonBlue@2x.png */,
+				F614219D17C6C8B6003455EB /* NavigationStripLeftSideButtonGrey@2x.png */,
+				F614219E17C6C8B6003455EB /* NavigationStripLeftSideButtonRed@2x.png */,
+				F614219F17C6C8B6003455EB /* NavigationStripRightSideButton-Selected@2x.png */,
+				F61421A017C6C8B6003455EB /* NavigationStripRightSideButton@2x.png */,
+				F61421A117C6C8B6003455EB /* NavigationStripRightSideButtonBlue@2x.png */,
+				F61421A217C6C8B6003455EB /* NavigationStripRightSideButtonGrey@2x.png */,
+				F61421A317C6C8B6003455EB /* NavigationStripRightSideButtonRed@2x.png */,
+				F61421A417C6C8B6003455EB /* NavigationStripSectionBackground-Selected@2x.png */,
+				F61421A517C6C8B6003455EB /* NavigationStripSectionBackground@2x.png */,
+				F61421A617C6C8B6003455EB /* NavigationStripSectionBackground_2-Selected@2x.png */,
+				F61421A717C6C8B6003455EB /* NavigationStripSectionBackground_2@2x.png */,
+				F61421A817C6C8B6003455EB /* NavigationStripSectionBackgroundRed-Selected@2x.png */,
+				F61421A917C6C8B6003455EB /* NavigationStripSectionBackgroundRed@2x.png */,
+			);
+			path = 2x;
+			sourceTree = "<group>";
+		};
+		F61421F117C6C8CE003455EB /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F61421F217C6C8CE003455EB /* InfoPlist.strings */,
+				F61421F417C6C8CE003455EB /* TSTabViewTestViewController~ipad.xib */,
+				F61421F617C6C8CE003455EB /* TSTabViewTestViewController~iphone.xib */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F614211A17C6C83B003455EB /* TSTabView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F614213817C6C83B003455EB /* Build configuration list for PBXNativeTarget "TSTabView" */;
+			buildPhases = (
+				F614211717C6C83B003455EB /* Sources */,
+				F614211817C6C83B003455EB /* Frameworks */,
+				F614211917C6C83B003455EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSTabView;
+			productName = TSTabView;
+			productReference = F614211B17C6C83B003455EB /* TSTabView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F614211317C6C83B003455EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Viacheslav Radchenko";
+			};
+			buildConfigurationList = F614211617C6C83B003455EB /* Build configuration list for PBXProject "TSTabView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F614211217C6C83B003455EB;
+			productRefGroup = F614211C17C6C83B003455EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F614211A17C6C83B003455EB /* TSTabView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F614211917C6C83B003455EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F614212917C6C83B003455EB /* InfoPlist.strings in Resources */,
+				F614213117C6C83B003455EB /* Default.png in Resources */,
+				F614213317C6C83B003455EB /* Default@2x.png in Resources */,
+				F614213517C6C83B003455EB /* Default-568h@2x.png in Resources */,
+				F61421AA17C6C8B6003455EB /* LICENSE in Resources */,
+				F61421BD17C6C8B6003455EB /* NavigationStripHeaderBackground.png in Resources */,
+				F61421BE17C6C8B6003455EB /* NavigationStripHeaderBackground_1.png in Resources */,
+				F61421BF17C6C8B6003455EB /* NavigationStripHeaderBackground_2.png in Resources */,
+				F61421C017C6C8B6003455EB /* NavigationStripIcon-Selected.png in Resources */,
+				F61421C117C6C8B6003455EB /* NavigationStripIcon.png in Resources */,
+				F61421C217C6C8B6003455EB /* NavigationStripItem-Selected.png in Resources */,
+				F61421C317C6C8B6003455EB /* NavigationStripItem.png in Resources */,
+				F61421C417C6C8B6003455EB /* NavigationStripItemBlue.png in Resources */,
+				F61421C517C6C8B6003455EB /* NavigationStripItemGrey.png in Resources */,
+				F61421C617C6C8B6003455EB /* NavigationStripItemRed.png in Resources */,
+				F61421C717C6C8B6003455EB /* NavigationStripLeftSideButton-Selected.png in Resources */,
+				F61421C817C6C8B6003455EB /* NavigationStripLeftSideButton.png in Resources */,
+				F61421C917C6C8B6003455EB /* NavigationStripLeftSideButtonBlue.png in Resources */,
+				F61421CA17C6C8B6003455EB /* NavigationStripLeftSideButtonGrey.png in Resources */,
+				F61421CB17C6C8B6003455EB /* NavigationStripLeftSideButtonRed.png in Resources */,
+				F61421CC17C6C8B6003455EB /* NavigationStripRightSideButton-Selected.png in Resources */,
+				F61421CD17C6C8B6003455EB /* NavigationStripRightSideButton.png in Resources */,
+				F61421CE17C6C8B6003455EB /* NavigationStripRightSideButtonBlue.png in Resources */,
+				F61421CF17C6C8B6003455EB /* NavigationStripRightSideButtonGrey.png in Resources */,
+				F61421D017C6C8B6003455EB /* NavigationStripRightSideButtonRed.png in Resources */,
+				F61421D117C6C8B6003455EB /* NavigationStripSectionBackground-Selected.png in Resources */,
+				F61421D217C6C8B6003455EB /* NavigationStripSectionBackground.png in Resources */,
+				F61421D317C6C8B6003455EB /* NavigationStripSectionBackground_2-Selected.png in Resources */,
+				F61421D417C6C8B6003455EB /* NavigationStripSectionBackground_2.png in Resources */,
+				F61421D517C6C8B6003455EB /* NavigationStripSectionBackgroundRed-Selected.png in Resources */,
+				F61421D617C6C8B6003455EB /* NavigationStripSectionBackgroundRed.png in Resources */,
+				F61421D717C6C8B6003455EB /* NavigationStripHeaderBackground@2x.png in Resources */,
+				F61421D817C6C8B6003455EB /* NavigationStripHeaderBackground_1@2x.png in Resources */,
+				F61421D917C6C8B6003455EB /* NavigationStripHeaderBackground_2@2x.png in Resources */,
+				F61421DA17C6C8B6003455EB /* NavigationStripIcon-Selected@2x.png in Resources */,
+				F61421DB17C6C8B6003455EB /* NavigationStripIcon@2x.png in Resources */,
+				F61421DC17C6C8B6003455EB /* NavigationStripItem-Selected@2x.png in Resources */,
+				F61421DD17C6C8B6003455EB /* NavigationStripItem@2x.png in Resources */,
+				F61421DE17C6C8B6003455EB /* NavigationStripItemBlue@2x.png in Resources */,
+				F61421DF17C6C8B6003455EB /* NavigationStripItemGrey@2x.png in Resources */,
+				F61421E017C6C8B6003455EB /* NavigationStripItemRed@2x.png in Resources */,
+				F61421E117C6C8B6003455EB /* NavigationStripLeftSideButton-Selected@2x.png in Resources */,
+				F61421E217C6C8B6003455EB /* NavigationStripLeftSideButton@2x.png in Resources */,
+				F61421E317C6C8B6003455EB /* NavigationStripLeftSideButtonBlue@2x.png in Resources */,
+				F61421E417C6C8B6003455EB /* NavigationStripLeftSideButtonGrey@2x.png in Resources */,
+				F61421E517C6C8B6003455EB /* NavigationStripLeftSideButtonRed@2x.png in Resources */,
+				F61421E617C6C8B6003455EB /* NavigationStripRightSideButton-Selected@2x.png in Resources */,
+				F61421E717C6C8B6003455EB /* NavigationStripRightSideButton@2x.png in Resources */,
+				F61421E817C6C8B6003455EB /* NavigationStripRightSideButtonBlue@2x.png in Resources */,
+				F61421E917C6C8B6003455EB /* NavigationStripRightSideButtonGrey@2x.png in Resources */,
+				F61421EA17C6C8B6003455EB /* NavigationStripRightSideButtonRed@2x.png in Resources */,
+				F61421EB17C6C8B6003455EB /* NavigationStripSectionBackground-Selected@2x.png in Resources */,
+				F61421EC17C6C8B6003455EB /* NavigationStripSectionBackground@2x.png in Resources */,
+				F61421ED17C6C8B6003455EB /* NavigationStripSectionBackground_2-Selected@2x.png in Resources */,
+				F61421EE17C6C8B6003455EB /* NavigationStripSectionBackground_2@2x.png in Resources */,
+				F61421EF17C6C8B6003455EB /* NavigationStripSectionBackgroundRed-Selected@2x.png in Resources */,
+				F61421F017C6C8B6003455EB /* NavigationStripSectionBackgroundRed@2x.png in Resources */,
+				F61421FA17C6C8CE003455EB /* InfoPlist.strings in Resources */,
+				F61421FB17C6C8CE003455EB /* TSTabViewTestViewController~ipad.xib in Resources */,
+				F61421FC17C6C8CE003455EB /* TSTabViewTestViewController~iphone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F614211717C6C83B003455EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F614212B17C6C83B003455EB /* main.m in Sources */,
+				F614212F17C6C83B003455EB /* TSAppDelegate.m in Sources */,
+				F61421AB17C6C8B6003455EB /* TSUtils.m in Sources */,
+				F61421AC17C6C8B6003455EB /* TSNavigationStripModel.m in Sources */,
+				F61421AD17C6C8B6003455EB /* TSNavigationStripView.m in Sources */,
+				F61421AE17C6C8B6003455EB /* TSScrollView.m in Sources */,
+				F61421B917C6C8B6003455EB /* TSTabView.m in Sources */,
+				F61421BA17C6C8B6003455EB /* TSTabViewModel.m in Sources */,
+				F61421BB17C6C8B6003455EB /* TSTabViewWithDropDownPanel.m in Sources */,
+				F61421BC17C6C8B6003455EB /* TSTabViewWithDropDownPanelModel.m in Sources */,
+				F61421FD17C6C8CE003455EB /* TSTabViewTestViewController.m in Sources */,
+				F614220217C6C927003455EB /* TSTestSectionButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F614212717C6C83B003455EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F614212817C6C83B003455EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F61421F217C6C8CE003455EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F61421F317C6C8CE003455EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F61421F417C6C8CE003455EB /* TSTabViewTestViewController~ipad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F61421F517C6C8CE003455EB /* en */,
+			);
+			name = "TSTabViewTestViewController~ipad.xib";
+			sourceTree = "<group>";
+		};
+		F61421F617C6C8CE003455EB /* TSTabViewTestViewController~iphone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F61421F717C6C8CE003455EB /* en */,
+			);
+			name = "TSTabViewTestViewController~iphone.xib";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F614213617C6C83B003455EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F614213717C6C83B003455EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F614213917C6C83B003455EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSTabView/TSTabView-Prefix.pch";
+				INFOPLIST_FILE = "TSTabView/TSTabView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F614213A17C6C83B003455EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSTabView/TSTabView-Prefix.pch";
+				INFOPLIST_FILE = "TSTabView/TSTabView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F614211617C6C83B003455EB /* Build configuration list for PBXProject "TSTabView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F614213617C6C83B003455EB /* Debug */,
+				F614213717C6C83B003455EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F614213817C6C83B003455EB /* Build configuration list for PBXNativeTarget "TSTabView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F614213917C6C83B003455EB /* Debug */,
+				F614213A17C6C83B003455EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F614211317C6C83B003455EB /* Project object */;
+}
