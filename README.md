@@ -54,7 +54,8 @@ It provides smooth animations for item selection and dynamic content modificatio
 
 ## Links
 
-Parent repository [TSUIKit](https://github.com/Viacheslav-Radchenko/TSUIKit).
+* Parent repository [TSUIKit](https://github.com/Viacheslav-Radchenko/TSUIKit).
+* Demo video [TSTabView](http://youtu.be/GvTfKJM43uQ).
 
 ## Requirements
 
