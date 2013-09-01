@@ -2,7 +2,7 @@ TSTabView
 =======
 
 `TSTabView` UI component that allows to flip left and right through pages of data. Pages content provided to TSTabView by implementing TSTabViewDataSource protocol. TSTabView can manage set of UIView or UIViewController objects. TSNavigationStripView control is used to display available pages titles/tabs and navigate between them.
-Some features are listed below. Custom TSNavigationStripView entity should be provided to TSTabView during initialisation. Some features are listed below:
+Custom TSNavigationStripView entity should be provided to TSTabView during initialisation. Some features are listed below:
 
 * Navigates through set of UIView or UIViewController objects.
 * Support far jumps between pages.
@@ -10,7 +10,7 @@ Some features are listed below. Custom TSNavigationStripView entity should be pr
 * Tabs list in TSNavigationStripView can be scrollable.
 * TSNavigationStripView can display additional menu items on left or right sides.
 * TSNavigationStripView provide great flexibility for appearance  customisation.
-* All view transitions are down with smooth animations.
+* All view transitions are done with smooth animations.
 
 <img src="https://raw.github.com/Viacheslav-Radchenko/TSUIKit/master/Screenshots/TSTabView_Screenshot1.jpg" alt="TSTabView examples" width="360" height="480" />
 <img src="https://raw.github.com/Viacheslav-Radchenko/SSUIKit/master/Screenshots/TSTabView_Screenshot2.jpg" alt="TSTabView examples" width="360" height="480" />
@@ -72,7 +72,12 @@ Right now better way to see components functionality is to compile examples prov
 
 ## Installation
 
-All you need to do is drop source files from `Classes\TSUIKit` folder into your project and add corresponding `#include "*.h"` to the top of classes that will use particular component.
+The easiest way to integrate TSUIKit is using CocoaPods. Just add this to your Podfile:
+```
+	pod 'TSUIKit', '~> 0.1' 
+```
+
+Other option is to  drop source files from `Classes\TSUIKit` folder into your project and add corresponding `#include "*.h"` to the top of classes that will use particular component.
 `TS*Models` are optional part of `TSTabView` infrastructure. They provide ready-to-use examples of corresponding data source implementations. You may use them or implement your own data sources.
 `TSTabView` use `QuartzCore.framework`, so you might need to add it as well.
 
